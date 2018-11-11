@@ -16,6 +16,10 @@
 
 	<!-- Custom styles for this template -->
 	<link href="assets/css/custom.css" rel="stylesheet">
+
+	<!-- Font Awesome CDN -->
+	<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0"
+	    crossorigin="anonymous"></script>
 </head>
 
 <body class="text-center">
@@ -23,61 +27,60 @@
 	<div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
 		<header class="masthead mb-auto">
 			<div class="inner">
-				<h3 class="masthead-brand">Budget Garage Doors</h3>
+				<!-- <h3 class="masthead-brand">Budget Garage Doors</h3> -->
 				<!-- Add menu if adding pages later. -->
-				<!-- <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Contact</a>
-        </nav> -->
+				<nav class="nav nav-masthead justify-content-center">
+					<button>
+						<a class="nav-link" href="tel:520-305-8588">
+							<i class="fas fa-phone"></i> 520-305-8588</a>
+					</button>
+					<!-- <a class="nav-link" href="#">Services</a>
+					<a class="nav-link" href="#">Contact</a> -->
+				</nav>
 			</div>
 		</header>
 
 		<main role="main" class="inner cover">
 			<h1 class="cover-heading">Budget Garage Doors & Service</h1>
-			<p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen
-				background photo to make it your own.</p>
-			<p class="lead">
-				<a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-			</p>
+			<br />
+			<p class="lead">Sales and service with your BUDGET in mind!</p>
 		</main>
 
-		<div class="mobilename">
-			<h2>
-				<p>Budget Garage Doors and Service</p>
-				<p>Tucson, AZ</p>
-				<p>520-305-8588</p>
-			</h2>
-			<div class="mobileslogan">
-				<h2>
-					<p>Sales and service with your BUDGET in mind</p>
-				</h2>
-			</div>
-		</div>
+		<section id="information">
+			<p>Sales and service of all residential garage doors. Service of all types of garage doors and all related equipment, including
+				broken springs, openers, and panels using top quality parts. Install of new or replacement doors.</p>
 
-		<p>Sales and service of all residential garage doors. Service of all types of garage doors and all related equipment, including
-			broken springs, openers, and panels using top quality parts. Install of new or replacement doors.</p>
+			<p>Budget Garage Doors and Services provides coverage to Tucson, South Tucson, Sahuarita, Green Valley, Vail, Benson, Marana,Tortolita,
+				Oro Valley, and Catalina.</p>
 
-		<p>Budget Garage Doors and Services provides coverage to Tucson, South Tucson, Sahuarita, Green Valley, Vail, Benson, Marana,Tortolita,
-			Oro Valley, and Catalina.</p>
+			<p> Within this service area, there are NO minimum trip fees, and all quotes are onsite, written, and are FREE.</p>
 
-		<p> Within this service area, there are NO minimum trip fees, and all quotes are onsite, written, and are FREE.</p>
-
-		<p>Any actual work has a minimum $50 service charge. For many actual jobs, this minimum fee can cover all labor charges.</p>
+			<p>Any actual work has a minimum $50 service charge. For many actual jobs, this minimum fee can cover all labor charges.</p>
+		</section>
 
 		<!-- phone number -->
-		<div class="phone">
-			<h2>520-305-8588</h2>
-		</div>
+		<section id="phone">
+			<h2 class="cover-header">
+				<a href="tel:520-305-8588">Call 520-305-8588</a>
+			</h2>
+		</section>
 
 		<footer class="mastfoot mt-auto">
 			<div class="inner">
-				<p>This site is owned by Budget Garage Doors and Services, Tucson, AZ. All material is covered under copywrite law and may
-					not be copied in part or in whole.</p>
+				<p> Copyright ©
+					<span id="cpYear"></span>
+					<a href="https://www.csdesignstudios.com" rel="noopener" target="_blank">Budget Garage Doors and Services</a>
+					<br />Proudly Serving Tucson, Arizona</p>
 			</div>
 		</footer>
 	</div>
 
+	<!-- include jQuery library -->
+	<script src="assets/js/jquery-3.2.1.slim.min.js"></script>
+	<script>
+		const year = new Date();
+		jQuery("#cpYear").text(year.getFullYear());
+	</script>
 </body>
 
 </html>
